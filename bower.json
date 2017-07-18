@@ -1,0 +1,15 @@
+{
+  "name": "notebook",
+  "description": "angularjs notebook",
+  "main": "angularjs",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

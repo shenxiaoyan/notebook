@@ -1,0 +1,1 @@
+angular.module("app",["ui.router"]),angular.module("app").config(["$stateProvider","$urlRouterProvider",function(e,t){e.state("home",{url:"/",templateUrl:"view/layout/home.html"}),t.otherwise("/")}]),angular.module("app").directive("topPanel",[function(){return{restrict:"A",replace:!0,templateUrl:"view/template/top-panel.html"}}]);
