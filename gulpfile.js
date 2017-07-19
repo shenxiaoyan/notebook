@@ -12,6 +12,7 @@ var app = {
     prdPath: 'dist/'
 };
 
+
 gulp.task('lib', function() {
     gulp.src('bower_components/**/*.js')
         .pipe(gulp.dest(app.devPath + 'vendor'))
@@ -25,6 +26,7 @@ gulp.task('html', function() {
         .pipe(gulp.dest(app.prdPath))
         .pipe($.connect.reload());
 });
+
 
 
 gulp.task('json', function() {
@@ -63,7 +65,14 @@ gulp.task('image', function() {
         .pipe($.connect.reload());
 });
 
-gulp.task('build', ['image', 'js', 'css', 'lib', 'html', 'json']);
+gulp.task('copy', function() {
+    gulp.src(app.srcPath + 'assets/**/*')
+        .pipe(gulp.dest(app.devPath + 'assets'))
+        .pipe(gulp.dest(app.prdPath + 'assets'))
+        .pipe($.connect.reload());
+});
+
+gulp.task('build', ['image', 'js', 'css', 'lib', 'html', 'json', 'copy']);
 
 gulp.task('clean', function() {
     gulp.src([app.devPath, app.prdPath])
@@ -85,6 +94,7 @@ gulp.task('serve', ['build'], function() {
     gulp.watch(app.srcPath + 'style/**/*.css', ['css']);
     gulp.watch(app.srcPath + 'script/**/*.js', ['js']);
     gulp.watch(app.srcPath + 'image/**/*', ['image']);
+    gulp.watch(app.srcPath + 'assets/**/*', ['copy']);
 });
 
 gulp.task('default', ['serve']);
