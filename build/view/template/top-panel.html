@@ -1,5 +1,16 @@
 <div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">login</button>
+    <div class="panel-head">
+        <div class="select-style" ng-click="toggle()">
+            <img src="image/multiselect.png">
+        </div>
+        <button type="button" class="style-button"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</button>
+    </div>
+    <div class="bomb-box" ng-if="custom">
+        <ul>
+            <li>草稿</li>
+            <li>我的文章</li>
+        </ul>
+    </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog wrap-modal" role="document">
 
@@ -27,3 +38,5 @@
         </div>
     </div>
 </div>
+
+

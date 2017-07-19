@@ -1,7 +1,7 @@
 
 .wrap-modal {
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,48 @@
 }
 
 
+/*头部*/
+.panel-head{
+    height: 50px;
+    border-bottom: solid 1px #ebebeb;
+}
+.style-button{
+    float: right;
+    font-size: 18px;
+    padding: 12px 20px 0 0;
+    border: none;
+    outline-width: 0;
+    background-color: #fff;
+}
+.select-style{
+    float: right;
+    margin: 8px 15px 0 0;
+}
+
+/*弹框样式*/
+.bomb-box{
+    width: 200px;
+    height:100px;
+    float: right;
+    margin-right:3px;
+    border: solid 1px #ebebeb;
+    border-top:none;
+}
+.bomb-box ul{
+    padding: 0;
+}
+.bomb-box ul li{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    padding: 15px 0 10px 15px;
+
+}
+.bomb-box ul li:hover{
+    background-color: #f7f8f9;
+
+}
+
 /*
     模态框背景drop颜色
 */
@@ -39,7 +81,7 @@
 }
 
 
-/* 
+/*
     模态框的阴影改变
 */
 
