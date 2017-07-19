@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('app').directive('topPanel', [function() {
     return {
         restrict: 'A',
@@ -5,3 +7,7 @@ angular.module('app').directive('topPanel', [function() {
         templateUrl: "view/template/top-panel.html"
     };
 }]);
+
+
+
+

@@ -4,7 +4,7 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function($
     $stateProvider.state('home', {
         url: '/',
         templateUrl: 'view/layout/home.html',
-        // controller: 'homeCtrl'
-    })
+        controller: 'homeCtrl'
+    });
     $urlRouterProvider.otherwise('/');
-}])
+}]);
