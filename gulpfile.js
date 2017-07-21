@@ -37,7 +37,7 @@ gulp.task('json', function() {
 });
 
 gulp.task('css', function() {
-    gulp.src(app.srcPath + 'style/*.css')
+    gulp.src(app.srcPath + 'style/**/*.css')
         .pipe(concat('style.min.css'))
         .pipe($.plumber())
         .pipe(gulp.dest(app.devPath + 'css'))

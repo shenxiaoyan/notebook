@@ -1,0 +1,33 @@
+<div class="container-fluid write">
+    <div class="row-fluid">
+        <div class="col-md-2 aside">
+            <div class="home-wrap">
+                <a ui-sref="home" class="go-home">
+                    <span>回首页</span>
+                </a>
+            </div>
+            <div class="new-note">
+                <a href="javacript:void(0)" ng-click="toggleCreateNote()">
+                    <i class="iconfont icon-jia"></i>
+                    新建文集
+                </a>
+                <div class="new-note-form slide-down" ng-if="createNote">
+                    <form class="create-note-form">
+                        <input type="text" placeholder="请输入文集名...">
+                        <div class="option">
+                            <button class="btn create-note-btn">创建</button>
+                            <button class="btn cancel">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-list notebooks">
+                <li>
+                    <a href="javascript:void(0)">
+                        <span>网络</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

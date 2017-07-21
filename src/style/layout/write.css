@@ -1,0 +1,98 @@
+
+.write{
+    padding: 0;
+    margin: 0;
+}
+
+.write>div{
+    height: inherit;
+}
+.write .aside{
+    background-color: #3f3f3f;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: inherit;
+    padding:0;
+}
+
+.write .aside .home-wrap{
+    padding: 30px 19px 5px 18px;
+    text-align: center;
+}
+.home-wrap .go-home{
+    color:#0080ff;
+    padding: 9px 0;
+    font-size: 15px;
+    border: 1px solid rgba(92, 159, 236, 0.7);
+    border-radius: 4px;
+    display: block;
+    transition: 0.1s ease;
+    -webkit-transition: 0.1s ease;
+    -moz-transition: 0.1s ease;
+    -o-transition: 0.1s ease;
+    -ms-transition: 0.1s ease;
+}
+
+.home-wrap .go-home:hover{
+    border: 1px solid #0080ff;
+
+}
+
+.new-note{
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.new-note a{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #fff;
+}
+.new-note a i{
+    font-weight: 600;
+}
+
+.create-note-form input{
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: rgba(180,180,180,0.2);
+    border-color: #2f2f2f;
+    color: #c8c8c8;
+    outline: 0;
+    margin-top: 13px;
+}
+
+.create-note-form .option{
+    margin-top: 13px;
+}
+
+.create-note-btn{
+    background: none;
+    border-color: #34ab20;
+    border-radius: 20px;
+    color: #34ab20;
+    padding: 5px 20px;
+}
+.create-note-form .cancel{
+    padding-top: 6px;
+    background: none;
+    border: none;
+    color: #969696;
+}
+
+.create-note-form .cancel{
+    color: #eee;
+}
+
+.notebooks{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    padding-left: 2px;
+}
+
+
+
